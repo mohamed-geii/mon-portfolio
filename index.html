@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio — Ingénieur</title>
+  <title>Portfolio — etudiant</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
@@ -313,11 +313,11 @@
 
   <!-- HERO -->
   <section id="hero">
-    <p class="hero-tag">// Étudiant ingénieur — IUT</p>
+    <p class="hero-tag">// Étudiant en GEII— IUT de Bordeaux</p>
     <h1 class="hero-name">Mon<br><span>Portfolio</span></h1>
     <p class="hero-title">
       Spécialité <b>Génie Électrique &amp; Informatique Industrielle</b><br>
-      Conception · Systèmes embarqués · Énergie · Prototypage
+      Electronique · Systèmes embarqués · Énergie · Automatisme
     </p>
     <div class="hero-bar">
       <a href="#projets" class="btn solid">Voir les projets</a>
@@ -329,7 +329,7 @@
   <section id="projets">
     <div class="section-header reveal">
       <span class="section-num">01</span>
-      <h2 class="section-title">Projets SAÉ</h2>
+      <h2 class="section-title">Projets SAÉ &amp; DU</h2>
       <div class="section-line"></div>
     </div>
 
@@ -579,7 +579,7 @@
       <div class="project-card">
         <div class="project-header" data-project="p4">
           <span class="project-num">04</span>
-          <span class="project-name">SAÉ 4 — Chauffage eau solaire + MPPT</span>
+          <span class="project-name">DU 1— Chauffage eau solaire + MPPT</span>
           <span class="project-tag">ÉNERGIE · ALGO</span>
           <span class="project-arrow">›</span>
         </div>
@@ -597,9 +597,17 @@
 
             <div class="project-desc-block">
               <p class="project-desc">
-                Système de chauffage d'eau sanitaire alimenté par panneau photovoltaïque, couplé à un algorithme MPPT
-                (Maximum Power Point Tracking) pour maximiser l'extraction d'énergie en temps réel. Implémentation
-                de la méthode Perturbe &amp; Observe, asservissement du hacheur Buck-Boost et monitoring des grandeurs électriques.
+               
+                J’ai participé à ce projet visant à concevoir un système capable de chauffer et maintenir de l’eau à 55 °C
+                sans utiliser d’énergie fossile ni le réseau électrique. Le projet explorait plusieurs solutions d’énergie 
+                 renouvelable : production mécanique par pédalage, énergie photovoltaïque et concentration solaire thermique.
+                 J’ai travaillé sur la conception d’un caisson thermique isolant, le dimensionnement des résistances chauffantes,
+                la mesure et la régulation de température avec Arduino, ainsi que l’analyse des performances énergétiques du système. 
+                Le projet incluait également la programmation de fonctions de contrôle PWM via MOSFET, l’étude des pertes thermiques
+                 et la réalisation de prototypes testés expérimentalement.
+
+                 Ce projet m’a permis de développer des compétences en électronique de puissance, énergie renouvelable,programmation embarquée,
+                 conception mécanique et fabrication numérique (impression 3D et découpe laser).
               </p>
             </div>
 
@@ -667,20 +675,22 @@
     </div>
     <div class="skills-panel" id="techPanel">
       <div class="skills-grid">
-        <div class="skill-item"><div class="skill-name">Électronique analogique<span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Électronique numérique<span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Programmation embarquée (C/C++)<span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Arduino / STM32<span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Conversion d'énergie (hacheur)<span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Électronique analogique(capteurs, filtrage)<span class="skill-pct">100%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Électronique numérique(MCU, logique numérique, PWM)<span class="skill-pct">100%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Programmation embarquée (C/C++)<span class="skill-pct">100%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Arduino / STM32<span class="skill-pct">100%</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Lecture et exploitation de datasheets électroniques<span class="skill-pct">100%</span></div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Dimensionnement de composants électroniques<span class="skill-pct">100%</span></div><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Rédaction de dossiers techniques (DDC, DDF, DDV)<span class="skill-pct">100%</span></div><div class="skill-bar"><div class="skill-fill" style="width:68%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Schémas électriques (ISIS-ARES)<span class="skill-pct">100%</span></div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Protocoles (I2C,SPI,RS232-TTL5V / NEC,RC5)<span class="skill-pct">100%</span></div><div class="skill-bar"><div class="skill-fill" style="width:73%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">RÉlectronique de puissance (MOSFET, résistances chauffantes, alimentation)<span class="skill-pct">55%</span></div><div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div></div>
         <div class="skill-item"><div class="skill-name">Systèmes photovoltaïques<span class="skill-pct">72%</span></div><div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">CAO / Conception mécanique<span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Mesure &amp; instrumentation<span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Régulation / Asservissement<span class="skill-pct">68%</span></div><div class="skill-bar"><div class="skill-fill" style="width:68%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Utilisation d’outils de fabrication numérique (impression 3D, découpe laser)(FABLAB)<span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
+        <div class="skill-item"><div class="skill-name"> algorithmes MPPT pour optimisation solaire<span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
         <div class="skill-item"><div class="skill-name">Matlab / Simulink<span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Schémas électriques (KiCad)<span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Protocoles (I2C, UART, SPI)<span class="skill-pct">73%</span></div><div class="skill-bar"><div class="skill-fill" style="width:73%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Réseaux &amp; IoT<span class="skill-pct">55%</span></div><div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Sécurité électrique (NFC, TBTS)<span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+        
+        
       </div>
     </div>
   </section>
@@ -699,14 +709,14 @@
     </div>
     <div class="skills-panel" id="transPanel">
       <div class="trans-grid">
-        <div class="trans-card"><div class="trans-icon">🤝</div><div><div class="trans-title">Travail en équipe</div><div class="trans-desc">Coordination en binôme et groupe sur des projets pluridisciplinaires, répartition claire des tâches.</div></div></div>
-        <div class="trans-card"><div class="trans-icon">🔍</div><div><div class="trans-title">Analyse &amp; résolution de problèmes</div><div class="trans-desc">Démarche systématique face aux pannes : diagnostic, test, correction et validation.</div></div></div>
-        <div class="trans-card"><div class="trans-icon">📐</div><div><div class="trans-title">Rigueur &amp; méthode</div><div class="trans-desc">Documentation technique soignée, respect des normes et procédures de sécurité.</div></div></div>
-        <div class="trans-card"><div class="trans-icon">💡</div><div><div class="trans-title">Créativité technique</div><div class="trans-desc">Recherche de solutions innovantes et pragmatiques dans les contraintes de budget et de temps.</div></div></div>
-        <div class="trans-card"><div class="trans-icon">⏱️</div><div><div class="trans-title">Gestion du temps</div><div class="trans-desc">Planification des phases de projet, respect des jalons et livrables dans les délais impartis.</div></div></div>
-        <div class="trans-card"><div class="trans-icon">📣</div><div><div class="trans-title">Communication</div><div class="trans-desc">Présentation orale de projets techniques, rédaction de rapports clairs et structurés.</div></div></div>
-        <div class="trans-card"><div class="trans-icon">🔄</div><div><div class="trans-title">Adaptabilité</div><div class="trans-desc">Capacité à intégrer rapidement de nouveaux outils, langages et contextes techniques.</div></div></div>
-        <div class="trans-card"><div class="trans-icon">🌱</div><div><div class="trans-title">Curiosité &amp; veille</div><div class="trans-desc">Intérêt actif pour les innovations en énergies renouvelables, systèmes embarqués et robotique.</div></div></div>
+        <div class="trans-card"><div class="trans-icon"></div><div><div class="trans-title">Travail en équipe</div><div class="trans-desc">Coordination en binôme et groupe sur des projets pluridisciplinaires, répartition claire des tâches.</div></div></div>
+        <div class="trans-card"><div class="trans-icon"></div><div><div class="trans-title">Analyse &amp; résolution de problèmes</div><div class="trans-desc">Démarche systématique face aux pannes : diagnostic, test, correction et validation.</div></div></div>
+        <div class="trans-card"><div class="trans-icon"></div><div><div class="trans-title">Rigueur &amp; méthode</div><div class="trans-desc">Documentation technique soignée, respect des normes et procédures de sécurité.</div></div></div>
+        <div class="trans-card"><div class="trans-icon"></div><div><div class="trans-title">Créativité technique</div><div class="trans-desc">Recherche de solutions innovantes et pragmatiques dans les contraintes de budget et de temps.</div></div></div>
+        <div class="trans-card"><div class="trans-icon"></div><div><div class="trans-title">Gestion du temps</div><div class="trans-desc">Planification des phases de projet, respect des jalons et livrables dans les délais impartis.</div></div></div>
+        <div class="trans-card"><div class="trans-icon"></div><div><div class="trans-title">Communication</div><div class="trans-desc">Présentation orale de projets techniques, rédaction de rapports clairs et structurés.</div></div></div>
+        <div class="trans-card"><div class="trans-icon"></div><div><div class="trans-title">Adaptabilité</div><div class="trans-desc">Capacité à intégrer rapidement de nouveaux outils, langages et contextes techniques.</div></div></div>
+        <div class="trans-card"><div class="trans-icon"></div><div><div class="trans-title">Curiosité &amp; veille</div><div class="trans-desc">Intérêt actif pour les innovations en énergies renouvelables, systèmes embarqués et robotique.</div></div></div>
       </div>
     </div>
   </section>
