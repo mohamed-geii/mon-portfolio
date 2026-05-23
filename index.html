@@ -354,7 +354,7 @@
 
             <!-- Photo de couverture du CDC -->
             <div class="project-cover">
-              <img src="photos/rafale-cover.jpg" alt="Page de couverture — CDC Rafale Miniature"
+              <img src="images/SLR cover.png" alt="Page de couverture — CDC Rafale Miniature"
                    onerror="this.closest('.project-cover').style.display='none'">
               <div class="cover-overlay"></div>
               <div class="cover-badge">📄 CDC — Rafale Miniature</div>
@@ -368,8 +368,7 @@
                
                 J’ai participé au développement d’un système sonore et lumineux destiné à un planeur miniature en forme de Rafale.
                  Le dispositif générait des effets lumineux clignotants ainsi qu’un son pseudo-aléatoire simulant le bruit d’un avion.
-                 Ce projet m’a permis de travailler sur la génération de signaux électroniques, les oscillateurs,et les comparateurs de tension.
-                  J’ai également acquis de l’expérience dans le dimensionnement des composants et la validation fonctionnelle d’un système embarqué.
+                  Ce projet m’a permis de travailler sur la génération de signaux électroniques, les oscillateurs et les comparateurs de tension.
               </p>
             </div>
 
@@ -377,48 +376,35 @@
             <div class="gallery-section">
               <div class="gallery-label">Album — Conception &amp; Réalisation</div>
               <div class="gallery-grid">
-                <div class="gallery-thumb" data-src="photos/rafale-1.jpg" data-caption="Modélisation CAO">
-                  <img src="photos/rafale-1.jpg" alt="Rafale — Modélisation CAO" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">01</span>
-                </div>
-                <div class="gallery-thumb" data-src="photos/rafale-2.jpg" data-caption="Structure fuselage">
-                  <img src="photos/rafale-2.jpg" alt="Rafale — Structure" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">02</span>
-                </div>
-                <div class="gallery-thumb" data-src="photos/rafale-3.jpg" data-caption="Câblage électronique">
-                  <img src="photos/rafale-3.jpg" alt="Rafale — Câblage" onerror="this.closest('.gallery-thumb').style.display='none'">
+
+                
+                <div class="gallery-thumb" data-src="images/SLR Schema.png" data-caption="Schema électrique">
+                  <img src="images/SLR Schema.png" alt="Rafale — Câblage" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">03</span>
                 </div>
-                <div class="gallery-thumb" data-src="photos/rafale-4.jpg" data-caption="Assemblage final">
-                  <img src="photos/rafale-4.jpg" alt="Rafale — Assemblage" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">04</span>
-                </div>
-                <div class="gallery-thumb" data-src="photos/rafale-5.jpg" data-caption="Résultat final">
-                  <img src="photos/rafale-5.jpg" alt="Rafale — Résultat" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">05</span>
-                </div>
+                
+                
               </div>
             </div>
 
             <div class="project-meta">
+
               <div class="project-details">
-                <div class="detail-block"><div class="detail-label">Objectif</div><div class="detail-val">Maquette fonctionnelle à l'échelle</div></div>
-                <div class="detail-block"><div class="detail-label">Durée</div><div class="detail-val">Semestre 1</div></div>
-                <div class="detail-block"><div class="detail-label">Équipe</div><div class="detail-val">Binôme</div></div>
+                <div class="detail-block"><div class="detail-label">Fonction</div><div class="detail-val">Effets sonores et lumineux synchronisés</div></div>
+                <div class="detail-block"><div class="detail-label">Électronique</div><div class="detail-val">Oscillateurs et comparateurs de tension</div></div>
+                <div class="detail-block"><div class="detail-label">Commande</div><div class="detail-val">Génération de signaux électroniques</div></div>
               </div>
-              <div class="tech-chips">
-                <span class="chip">CAO</span><span class="chip">Impression 3D</span>
-                <span class="chip">Arduino</span><span class="chip">PWM Servo</span><span class="chip">Câblage</span>
+                          <div class="tech-chips">
+                <span class="chip">Électronique analogique</span><span class="chip">Oscillateurs</span>
+                <span class="chip">Comparateurs</span><span class="chip">Câblage</span><span class="chip">Validation</span>
               </div>
+              
             </div>
           </div>
         </div>
-      </div>
+      </div>  
+
 
       <!-- ═══ P2 : THERMOMÈTRE ═══ -->
       <div class="project-card">
@@ -432,7 +418,7 @@
           <div class="project-content">
 
             <div class="project-cover">
-              <img src="photos/thermometre-cover.jpg" alt="Page de couverture — CDC Thermomètre bébé"
+              <img src="images/Capture d’écran (213).png" alt="Page de couverture — CDC Thermomètre bébé"
                    onerror="this.closest('.project-cover').style.display='none'">
               <div class="cover-overlay"></div>
               <div class="cover-badge">📄 CDC — Thermomètre de bain bébé</div>
@@ -443,55 +429,38 @@
             <div class="project-desc-block">
               <p class="project-desc">
                 
-                Ce projet consistait à concevoir un thermomètre électronique capable de détecter si l’eau d’un bain
-                 était trop froide, idéale ou trop chaude pour un bébé. Le système utilisait un capteur de température
-                  et affichait l’état via des LEDs colorées (bleu, vert et rouge).
-                J’ai travaillé sur l’acquisition de données analogiques, le traitement des seuils de température et la
-                 gestion de l’alimentation afin d’assurer une bonne autonomie du dispositif. Ce projet m’a permis d’approfondir
-                  mes compétences en électronique analogique, capteurs et conception de circuits imprimés.
+                <p class="project-desc">
+Ce projet consistait à concevoir un thermomètre électronique capable d’indiquer si l’eau d’un bain était trop froide, idéale ou trop chaude pour un bébé. Le système utilisait un capteur de température et affichait l’état via des LEDs colorées (bleu, vert et rouge).
+
+J’ai travaillé sur l’acquisition de données analogiques, le traitement des seuils de température et la gestion de l’alimentation afin d’assurer une bonne autonomie du dispositif. Ce projet m’a permis de renforcer mes compétences en électronique analogique, capteurs et conception de circuits imprimés.
+</p>
               </p>
             </div>
 
             <div class="gallery-section">
               <div class="gallery-label">Album — Conception &amp; Réalisation</div>
               <div class="gallery-grid">
-                <div class="gallery-thumb" data-src="photos/thermometre-1.jpg" data-caption="Schéma électronique">
-                  <img src="photos/thermometre-1.jpg" alt="Thermomètre — Schéma" onerror="this.closest('.gallery-thumb').style.display='none'">
+                <div class="gallery-thumb" data-src="images/Capture d’écran (214).png" data-caption="Schéma électronique">
+                  <img src="images/Capture d’écran (214).png" alt="Thermomètre — Schéma" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">01</span>
                 </div>
-                <div class="gallery-thumb" data-src="photos/thermometre-2.jpg" data-caption="Montage sur breadboard">
-                  <img src="photos/thermometre-2.jpg" alt="Thermomètre — Breadboard" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">02</span>
-                </div>
-                <div class="gallery-thumb" data-src="photos/thermometre-3.jpg" data-caption="Affichage LCD en fonctionnement">
-                  <img src="photos/thermometre-3.jpg" alt="Thermomètre — LCD" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">03</span>
-                </div>
-                <div class="gallery-thumb" data-src="photos/thermometre-4.jpg" data-caption="PCB finalisé">
-                  <img src="photos/thermometre-4.jpg" alt="Thermomètre — PCB" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">04</span>
-                </div>
-                <div class="gallery-thumb" data-src="photos/thermometre-5.jpg" data-caption="Test de validation">
-                  <img src="photos/thermometre-5.jpg" alt="Thermomètre — Test" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">05</span>
-                </div>
+                
+                
+               
+                
               </div>
             </div>
 
             <div class="project-meta">
               <div class="project-details">
                 <div class="detail-block"><div class="detail-label">Capteur</div><div class="detail-val">Thermistance NTC / DS18B20</div></div>
-                <div class="detail-block"><div class="detail-label">Affichage</div><div class="detail-val">LCD 16×2 / LED RGB</div></div>
-                <div class="detail-block"><div class="detail-label">Sécurité</div><div class="detail-val">Isolation galvanique, TBTS</div></div>
+                <div class="detail-block"><div class="detail-label">Indications Visuelles</div><div class="detail-val">LED Rouge/Verte/Bleue</div></div>
+                <div class="detail-block"><div class="detail-label">Fonction</div><div class="detail-val">Détection de seuils de température</div></div>
               </div>
               <div class="tech-chips">
-                <span class="chip">Arduino / ATmega</span><span class="chip">Capteur temp.</span>
-                <span class="chip">I2C / LCD</span><span class="chip">Buzzer</span><span class="chip">Schéma électronique</span>
+                <span class="chip">PCB</span><span class="chip">Capteur thermique</span>
+                <span class="chip">Traitement du signal<</span><span class="chip">Électronique analogique</span><span class="chip">Tests & validation</span>
               </div>
             </div>
           </div>
@@ -520,40 +489,42 @@
 
             <div class="project-desc-block">
               <p class="project-desc">
-                J’ai participé au développement d’un kart miniature télécommandé utilisant une communication infrarouge 
-                basée sur le protocole NEC. Le système comprenait un émetteur avec commandes utilisateur (puissance moteur, direction et klaxon)
-                 ainsi qu’un récepteur pilotant un moteur brushless et un servomoteur.
-                 Ce projet m’a permis de travailler sur l’électronique embarquée, la programmation Arduino en C/C++, 
-                 le traitement de signaux PWM et la communication infrarouge. J’ai également contribué à la conception,
-                  au dimensionnement des composants et aux tests de validation du système
+                <p class="project-desc">
+J’ai participé au développement d’un kart miniature télécommandé utilisant une communication infrarouge basée sur le protocole NEC. Le système comprenait un émetteur avec commandes utilisateur (puissance moteur, direction et klaxon) ainsi qu’un récepteur pilotant un moteur brushless et un servomoteur.
+
+Ce projet m’a permis de travailler sur l’électronique embarquée, la programmation Arduino en C/C++, la génération de signaux PWM et la communication infrarouge. J’ai également participé à la conception électronique, au dimensionnement des composants et aux tests de validation du système.
+</p>
               </p>
             </div>
 
             <div class="gallery-section">
               <div class="gallery-label">Album — Conception &amp; Réalisation</div>
               <div class="gallery-grid">
-                <div class="gallery-thumb" data-src="photos/kart-1.jpg" data-caption="Châssis et structure mécanique">
-                  <img src="photos/kart-1.jpg" alt="Kart — Châssis" onerror="this.closest('.gallery-thumb').style.display='none'">
+
+                <div class="gallery-thumb" data-src="images/Schema emetteur.png" data-caption="Schèma électrique émetteur">
+                  <img src="images/Schema emetteur.png" alt="Kart — ESC" onerror="this.closest('.gallery-thumb').style.display='none'">
+                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
+                  <span class="thumb-num">03</span>
+                </div>
+
+                <div class="gallery-thumb" data-src="images/Schema ARES emetteur.png" data-caption="Schèma ARES émetteur">
+                  <img src="images/Schema ARES emetteur.png" alt="Kart — Châssis" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">01</span>
                 </div>
-                <div class="gallery-thumb" data-src="photos/kart-2.jpg" data-caption="Schema ISIS emetteur">
+                <div class="gallery-thumb" data-src="images/emett.png" data-caption="PCB">
                   <img src="images/emett.png" alt="Kart — Moteur" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">02</span>
                 </div>
-                <div class="gallery-thumb" data-src="photos/kart-3.jpg" data-caption="Variateur ESC et câblage">
-                  <img src="photos/kart-3.jpg" alt="Kart — ESC" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">03</span>
-                </div>
-                <div class="gallery-thumb" data-src="photos/kart-4.jpg" data-caption="Pack batterie LiPo">
-                  <img src="photos/kart-4.jpg" alt="Kart — Batterie" onerror="this.closest('.gallery-thumb').style.display='none'">
+                
+                <div class="gallery-thumb" data-src="images/Schema ISIS recepteur.png" data-caption="Schèma ISIS récépteur">
+                  <img src="images/Schema ISIS recepteur.png" alt="Kart — Batterie" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">04</span>
                 </div>
-                <div class="gallery-thumb" data-src="photos/kart-5.jpg" data-caption="Tests en conditions réelles">
-                  <img src="photos/kart-5.jpg" alt="Kart — Tests" onerror="this.closest('.gallery-thumb').style.display='none'">
+                <div class="gallery-thumb" data-src="images/Schema ARES Recepteur.png" data-caption="Schèma ARES récepteur">
+                  <img src="images/Schema ARES Recepteur.png" alt="Kart — Tests" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">05</span>
                 </div>
@@ -563,12 +534,12 @@
             <div class="project-meta">
               <div class="project-details">
                 <div class="detail-block"><div class="detail-label">Propulsion</div><div class="detail-val">Moteur brushless + hélice</div></div>
-                <div class="detail-block"><div class="detail-label">Alimentation</div><div class="detail-val">Pack LiPo 3S / 4S</div></div>
-                <div class="detail-block"><div class="detail-label">Commande</div><div class="detail-val">Télécommande RC + ESC</div></div>
+                <div class="detail-block"><div class="detail-label">Alimentation</div><div class="detail-val">Pack LiPo 2S +ESC</div></div>
+                <div class="detail-block"><div class="detail-label">Communication</div><div class="detail-val">infrarouge NEC</div></div>
               </div>
               <div class="tech-chips">
-                <span class="chip">Brushless / ESC</span><span class="chip">LiPo</span>
-                <span class="chip">PWM</span><span class="chip">RF / RC</span><span class="chip">Thermique moteur</span>
+                <span class="chip">Brushless / ESC</span><span class="chip">Arduino</span>
+                <span class="chip">PWM</span><span class="chip">IR NEC</span><span class="chip">Servomoteur</span>
               </div>
             </div>
           </div>
@@ -587,7 +558,7 @@
           <div class="project-content">
 
             <div class="project-cover">
-              <img src="photos/mppt-cover.jpg" alt="Page de couverture — CDC MPPT"
+              <img src="images/Capture d’écran (204).png" alt="Page de couverture — CDC MPPT"
                    onerror="this.closest('.project-cover').style.display='none'">
               <div class="cover-overlay"></div>
               <div class="cover-badge">📄 CDC — Chauffage solaire + MPPT</div>
@@ -598,60 +569,56 @@
             <div class="project-desc-block">
               <p class="project-desc">
                
-                J’ai participé à ce projet visant à concevoir un système capable de chauffer et maintenir de l’eau à 55 °C
-                sans utiliser d’énergie fossile ni le réseau électrique. Le projet explorait plusieurs solutions d’énergie 
-                 renouvelable : production mécanique par pédalage, énergie photovoltaïque et concentration solaire thermique.
-                 J’ai travaillé sur la conception d’un caisson thermique isolant, le dimensionnement des résistances chauffantes,
-                la mesure et la régulation de température avec Arduino, ainsi que l’analyse des performances énergétiques du système. 
-                Le projet incluait également la programmation de fonctions de contrôle PWM via MOSFET, l’étude des pertes thermiques
-                 et la réalisation de prototypes testés expérimentalement.
+                <p class="project-desc">
 
-                 Ce projet m’a permis de développer des compétences en électronique de puissance, énergie renouvelable,programmation embarquée,
-                 conception mécanique et fabrication numérique (impression 3D et découpe laser).
+J’ai participé à un projet visant à concevoir un système capable de chauffer et maintenir de l’eau à 55 °C sans utiliser d’énergie fossile ni le réseau électrique. Le projet explorait plusieurs solutions d’énergie renouvelable : production mécanique par pédalage, énergie photovoltaïque et concentration solaire thermique.
+
+J’ai travaillé sur la conception d’un caisson thermique isolant, le dimensionnement des résistances chauffantes, la mesure et la régulation de température avec Arduino, ainsi que le contrôle PWM via MOSFET et l’analyse des performances énergétiques du système.
+
+Ce projet m’a permis de développer des compétences en électronique de puissance, énergie renouvelable, programmation embarquée et fabrication numérique.
+
+</p>
               </p>
             </div>
 
             <div class="gallery-section">
               <div class="gallery-label">Album — Conception &amp; Réalisation</div>
               <div class="gallery-grid">
-                <div class="gallery-thumb" data-src="photos/mppt-1.jpg" data-caption="Panneau photovoltaïque">
-                  <img src="photos/mppt-1.jpg" alt="MPPT — Panneau PV" onerror="this.closest('.gallery-thumb').style.display='none'">
+                <div class="gallery-thumb" data-src="images/Capture d’écran (208).png" data-caption="version2 Panneau photovoltaïque circuit a realiser">
+                  <img src="images/Capture d’écran (208).png" alt="MPPT — Panneau PV" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">01</span>
                 </div>
-                <div class="gallery-thumb" data-src="photos/mppt-2.jpg" data-caption="Convertisseur Buck-Boost">
-                  <img src="photos/mppt-2.jpg" alt="MPPT — Hacheur" onerror="this.closest('.gallery-thumb').style.display='none'">
+                <div class="gallery-thumb" data-src="images/Capture d’écran (207).png" data-caption="Version2">
+                  <img src="images/Capture d’écran (207).png" alt="MPPT — Hacheur" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">02</span>
                 </div>
-                <div class="gallery-thumb" data-src="photos/mppt-3.jpg" data-caption="Implémentation algorithme P&O">
-                  <img src="photos/mppt-3.jpg" alt="MPPT — STM32" onerror="this.closest('.gallery-thumb').style.display='none'">
+                <div class="gallery-thumb" data-src="images/Capture d’écran (206).png" data-caption="version1">
+                  <img src="images/Capture d’écran (206).png" alt="MPPT — STM32" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">03</span>
                 </div>
-                <div class="gallery-thumb" data-src="photos/mppt-4.jpg" data-caption="Courbes de simulation Simulink">
-                  <img src="photos/mppt-4.jpg" alt="MPPT — Simulink" onerror="this.closest('.gallery-thumb').style.display='none'">
+                <div class="gallery-thumb" data-src="images/Capture d’écran (205).png" data-caption="essais version 1">
+                  <img src="images/Capture d’écran (205).png" alt="MPPT — Simulink" onerror="this.closest('.gallery-thumb').style.display='none'">
                   <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
                   <span class="thumb-num">04</span>
                 </div>
-                <div class="gallery-thumb" data-src="photos/mppt-5.jpg" data-caption="Installation et tests finaux">
-                  <img src="photos/mppt-5.jpg" alt="MPPT — Installation" onerror="this.closest('.gallery-thumb').style.display='none'">
-                  <div class="thumb-overlay"><span class="zoom-icon">⊕</span></div>
-                  <span class="thumb-num">05</span>
-                </div>
+                
               </div>
             </div>
 
             <div class="project-meta">
               <div class="project-details">
-                <div class="detail-block"><div class="detail-label">Algorithme</div><div class="detail-val">Perturbe &amp; Observe (P&amp;O)</div></div>
-                <div class="detail-block"><div class="detail-label">Convertisseur</div><div class="detail-val">Hacheur Buck-Boost</div></div>
-                <div class="detail-block"><div class="detail-label">Source</div><div class="detail-val">Panneau PV + capteurs V/I</div></div>
+                <div class="detail-block"><div class="detail-label">Algorithme</div><div class="detail-val">MPPT</div></div>
+                <div class="detail-block"><div class="detail-label">Commande de puissance</div><div class="detail-val">PWM via MOSFET</div></div>
+                <div class="detail-block"><div class="detail-label">Source d’énergie</div><div class="detail-val">Panneau PV + capteurs V/I</div></div>
               </div>
               <div class="tech-chips">
-                <span class="chip">MPPT</span><span class="chip">Panneau PV</span>
-                <span class="chip">Buck-Boost</span><span class="chip">STM32 / Arduino</span>
-                <span class="chip">Matlab/Simulink</span><span class="chip">Asservissement</span>
+                <span class="chip">MPPT</span><span class="chip">Photovoltaïque</span>
+                <span class="chip">Arduino</span><span class="chip"> PWM</span>
+                <span class="chip">MOSFET</span>
+                
               </div>
             </div>
           </div>
@@ -688,7 +655,7 @@
         <div class="skill-item"><div class="skill-name">Systèmes photovoltaïques<span class="skill-pct">72%</span></div><div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div></div>
         <div class="skill-item"><div class="skill-name">Utilisation d’outils de fabrication numérique (impression 3D, découpe laser)(FABLAB)<span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
         <div class="skill-item"><div class="skill-name"> algorithmes MPPT pour optimisation solaire<span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
-        <div class="skill-item"><div class="skill-name">Matlab / Simulink<span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div></div>
+        <div class="skill-item"><div class="skill-name">Python(bases)<span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div></div>
         
         
       </div>
