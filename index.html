@@ -270,6 +270,32 @@
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 3px; }
+/* ── À PROPOS ── */
+.about-bio { padding: 1.4rem 1.8rem; border: 1px solid var(--border); border-left: 3px solid var(--accent); background: rgba(0,180,255,0.03); margin-bottom: 2rem; }
+.about-bio p { font-size: 0.93rem; line-height: 1.85; color: var(--text); }
+.about-bio strong { color: var(--accent); }
+.timeline-label { font-family: var(--mono); font-size: 0.7rem; color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1rem; display: block; }
+.timeline-track { border-left: 2px solid var(--border); padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0; margin-bottom: 2rem; }
+.timeline-step { position: relative; padding: 0.8rem 0; }
+.t-dot { position: absolute; left: -1.85rem; top: 1.1rem; width: 10px; height: 10px; border-radius: 50%; background: var(--bg2); border: 2px solid var(--muted); }
+.timeline-step.active .t-dot { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 10px rgba(0,180,255,0.5); }
+.t-year { font-family: var(--mono); font-size: 0.68rem; color: var(--accent); margin-bottom: 0.2rem; }
+.t-title { font-weight: 700; font-size: 0.95rem; }
+.t-sub { font-size: 0.78rem; color: var(--muted); margin-top: 0.1rem; }
+.passions-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.passion-card { padding: 1.2rem 1.4rem; border: 1px solid var(--border); background: var(--card); transition: border-color 0.3s, transform 0.3s; }
+.passion-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+.passion-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.passion-name { font-weight: 700; font-size: 0.9rem; color: var(--accent); margin-bottom: 0.3rem; }
+.passion-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+
+/* ── ME CONTACTER ── */
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.contact-card { display: flex; align-items: center; gap: 1.2rem; padding: 1.2rem 1.5rem; border: 1px solid var(--border); background: var(--card); text-decoration: none; color: var(--text); transition: border-color 0.3s, transform 0.3s, background 0.3s; }
+.contact-card:hover { border-color: var(--accent); background: rgba(0,180,255,0.06); transform: translateY(-3px); }
+.contact-icon { font-size: 1.5rem; flex-shrink: 0; }
+.contact-label { font-family: var(--mono); font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.2rem; }
+.contact-value { font-size: 0.88rem; font-weight: 600; }
 
     @media (max-width: 700px) {
       nav { padding: 1rem 1.2rem; }
@@ -303,9 +329,11 @@
 <nav>
   <div class="nav-logo">// PORTFOLIO</div>
   <ul class="nav-links">
+    <li><a href="#apropos">À propos</a></li>
     <li><a href="#projets">Projets</a></li>
     <li><a href="#techniques">Compétences</a></li>
     <li><a href="#transversales">Soft Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -324,6 +352,82 @@
       <a href="#techniques" class="btn">Compétences</a>
     </div>
   </section>
+
+<!-- À PROPOS -->
+<section id="apropos">
+  <div class="section-header reveal">
+    <span class="section-num">00</span>
+    <h2 class="section-title">À propos</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-bio reveal">
+   
+    <p>
+  Passionné par l’électronique, les systèmes embarqués et l’intelligence artificielle,
+  je poursuis actuellement un <strong>BUT Génie Électrique &amp; Informatique Industrielle</strong>
+  à l’IUT de Bordeaux.
+
+  Après l’obtention d’un Bac Scientifique mention Bien, puis deux années de classe préparatoire
+  scientifique (PCSI puis PC), j’ai choisi de me spécialiser dans la conception de systèmes
+  intelligents mêlant électronique, programmation et automatisation.
+
+  Mon objectif est de développer des solutions innovantes à l’interface entre
+  matériel et logiciel.
+</p>
+  </div>
+
+  <div class="reveal">
+    <span class="timeline-label">// Parcours académique</span>
+    <div class="timeline-track">
+      <div class="timeline-step">
+        <div class="t-dot"></div>
+        <div class="t-content">
+          <div class="t-year">2020</div>
+          <div class="t-title">Baccalauréat S — Mention Bien</div>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="t-dot"></div>
+        <div class="t-content">
+          <div class="t-year">2020 – 2022</div>
+          <div class="t-title">CPGE PCSI → PC</div>
+          <div class="t-sub">Physique · Chimie · Sciences de l'ingénieur</div>
+        </div>
+      </div>
+      <div class="timeline-step active">
+        <div class="t-dot"></div>
+        <div class="t-content">
+          <div class="t-year">2024 → aujourd'hui</div>
+          <div class="t-title">BUT GEII 1ère année</div>
+          <div class="t-sub">IUT de Bordeaux · Électronique &amp; Informatique Industrielle</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal">
+    <span class="timeline-label">// Centres d'intérêt</span>
+    <div class="passions-grid">
+      <div class="passion-card">
+        <div class="passion-icon">⚡</div>
+        <div class="passion-name">Électronique</div>
+        <div class="passion-desc">Analogique, numérique, PCB, capteurs — concevoir des circuits qui prennent vie.</div>
+      </div>
+      <div class="passion-card">
+        <div class="passion-icon">🤖</div>
+        <div class="passion-name">Systèmes embarqués</div>
+        <div class="passion-desc">Arduino, STM32, C/C++ — programmer des microcontrôleurs pour piloter le monde réel.</div>
+      </div>
+      <div class="passion-card">
+        <div class="passion-icon">🧠</div>
+        <div class="passion-name">Intelligence Artificielle</div>
+        <div class="passion-desc">Machine learning, edge AI, algorithmes d'optimisation — l'ingénierie de demain.</div>
+      </div>
+    </div>
+  </div>
+
+</section>
 
   <!-- PROJETS -->
   <section id="projets">
@@ -688,6 +792,40 @@ Ce projet m’a permis de développer des compétences en électronique de puiss
     </div>
   </section>
 
+  <!-- ME CONTACTER -->
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Me contacter</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="contact-grid reveal">
+    <a class="contact-card" href="mailto:TON_EMAIL@gmail.com">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <div class="contact-label">Email</div>
+        <div class="contact-value">mohamedsarr501@gmail.com</div>
+      </div>
+    </a>
+    <a class="contact-card" href="https://linkedin.com/in/mohamed-sarr-67a4a2387" target="_blank">
+      <div class="contact-icon">💼</div>
+      <div>
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">Mohamed SARR</div>
+      </div>
+    </a>
+    <a class="contact-card" href="https://github.com/mohamed-geii" target="_blank">
+      <div class="contact-icon">🐙</div>
+      <div>
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">TON_GITHUB</div>
+      </div>
+    </a>
+  </div>
+
+</section>
+
 </main>
 
 <footer>
@@ -695,5 +833,6 @@ Ce projet m’a permis de développer des compétences en électronique de puiss
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
