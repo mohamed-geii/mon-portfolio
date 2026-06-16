@@ -128,40 +128,9 @@ main {
 #hero { 
   min-height: 100vh; 
   display: flex; 
-  align-items: center;
-  justify-content: space-between;
-  gap: 2.5rem;
-  flex-wrap: nowrap;
+  flex-direction: column; 
+  justify-content: center; 
   padding-top: 80px; 
-}
-
-.hero-text { 
-  flex: 1 1 auto; 
-  min-width: 0;
-}
-
-.hero-photo {
-  flex: 0 0 auto;
-  width: 280px;
-  height: 280px;
-  border: 2px solid var(--accent);
-  background: var(--card);
-  box-shadow: 0 0 30px var(--accent-glow);
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-}
-
-.hero-photo:hover {
-  box-shadow: 0 0 45px var(--accent-glow);
-}
-
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.95) saturate(1.1);
-  display: block;
 }
 
 .hero-tag { 
@@ -827,8 +796,4 @@ footer {
   .gallery-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .gallery-grid .gallery-thumb:first-child { grid-column: span 2; }
   .project-desc-block, .gallery-section, .project-meta { padding-left: 1.2rem; padding-right: 1.2rem; }
-   @media (max-width: 700px) {
-  #hero { flex-direction: column; text-align: center; }
-  .hero-photo { width: 200px; height: 200px; }
-}
 }
